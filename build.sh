@@ -5,5 +5,5 @@ docker rmi -f svgexport || true
 
 make build
 make docker OUT=$(pwd)/out
-make images OPTS=256:256
+make images OPTS="pad 256:256"
 
